@@ -1,6 +1,6 @@
-import weddingCeremony from "@/assets/wedding-ceremony.jpg";
-import weddingCouple from "@/assets/wedding-couple.jpg";
-import weddingReception from "@/assets/wedding-reception.jpg";
+import weddingCeremony from "@/assets/wedding1.jpg";
+import weddingCouple from "@/assets/wedding2.jpg";
+import weddingReception from "@/assets/membeso1.jpg";
 
 const WeddingSection = () => {
   return (
@@ -11,7 +11,7 @@ const WeddingSection = () => {
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="text-sm font-semibold text-accent tracking-[3px] uppercase mb-4">
-            Wedding Photography
+            Ndwalane Media
           </div>
           <h2 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-accent bg-clip-text text-transparent">
             Your Perfect Day
@@ -26,16 +26,16 @@ const WeddingSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           {/* Large Image - Ceremony */}
           <div className="lg:col-span-2 group relative">
-            <div className="glass-card overflow-hidden h-[400px] lg:h-[500px]">
+            <div className="overflow-hidden h-auto lg:h-[640px] rounded-lg flex items-center justify-center">
               <img 
                 src={weddingCeremony} 
                 alt="Wedding ceremony photography" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-auto max-h-[640px] object-contain transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className="text-xl font-semibold mb-2">Sacred Moments</h3>
-                  <p className="text-sm opacity-90">Capturing the emotion of your vows</p>
+                  <h3 className="text-xl font-semibold mb-2"> </h3>
+                  <p className="text-sm opacity-90"> </p>
                 </div>
               </div>
             </div>
@@ -45,16 +45,16 @@ const WeddingSection = () => {
           <div className="space-y-6 lg:space-y-8">
             {/* Couple Portrait */}
             <div className="group relative">
-              <div className="glass-card overflow-hidden h-[190px] lg:h-[235px]">
+              <div className="overflow-hidden h-[240px] lg:h-[280px] rounded-lg flex items-center justify-center">
                 <img 
                   src={weddingCouple} 
                   alt="Wedding couple portrait" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-auto max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-lg font-semibold mb-1">Romance</h3>
-                    <p className="text-xs opacity-90">Golden hour magic</p>
+                    <h3 className="text-lg font-semibold mb-1"> </h3>
+                    <p className="text-xs opacity-90"> </p>
                   </div>
                 </div>
               </div>
@@ -62,16 +62,16 @@ const WeddingSection = () => {
 
             {/* Reception */}
             <div className="group relative">
-              <div className="glass-card overflow-hidden h-[190px] lg:h-[235px]">
+              <div className="overflow-hidden h-[240px] lg:h-[280px] rounded-lg flex items-center justify-center">
                 <img 
                   src={weddingReception} 
                   alt="Wedding reception photography" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-auto max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-lg font-semibold mb-1">Celebration</h3>
-                    <p className="text-xs opacity-90">Joy and festivities</p>
+                    <h3 className="text-lg font-semibold mb-1"> </h3>
+                    <p className="text-xs opacity-90"> </p>
                   </div>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const WeddingSection = () => {
               </svg>
             </a>
             <div className="text-sm text-muted-foreground">
-              Limited dates available for 2025
+              
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import corporate1 from "@/assets/corporate-1.jpg";
-import corporateTeam from "@/assets/corporate-team.jpg";
-import corporateBuilding from "@/assets/corporate-building.jpg";
+import corporate1 from "@/assets/corporate.jpg";
+import corporateTeam from "@/assets/corporate2.jpg";
+import corporateBuilding from "@/assets/corporate4.jpg";
 
 const CorporateSection = () => {
   return (
@@ -15,7 +15,7 @@ const CorporateSection = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <div className="text-sm font-semibold text-muted-foreground tracking-[3px] uppercase mb-4">
-            Professional Excellence
+            Ndwalane Media
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Corporate
@@ -30,20 +30,20 @@ const CorporateSection = () => {
         </div>
 
         {/* Corporate Images Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+  <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {/* Main Corporate Portrait */}
-          <div className="lg:col-span-2 glass-card group cursor-pointer overflow-hidden">
-            <div className="relative h-96 lg:h-[500px] overflow-hidden rounded-lg">
+          <div className="lg:col-span-2 group cursor-pointer overflow-hidden rounded-lg">
+            <div className="relative h-auto lg:h-[620px] overflow-hidden rounded-lg">
               <img
                 src={corporate1}
                 alt="Professional corporate headshot photography"
-                className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                className="w-full h-auto min-h-[380px] max-h-[620px] object-contain transition-all duration-700 group-hover:scale-105"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className="text-2xl font-bold mb-2">Executive Portraits</h3>
-                  <p className="text-white/80">Professional headshots that command respect</p>
+                  <h3 className="text-2xl font-bold mb-2"> </h3>
+                  <p className="text-white/80"> </p>
                 </div>
               </div>
             </div>
@@ -51,33 +51,33 @@ const CorporateSection = () => {
 
           {/* Corporate Team & Building */}
           <div className="space-y-8">
-            <div className="glass-card group cursor-pointer overflow-hidden">
-              <div className="relative h-44 overflow-hidden rounded-lg">
+            <div className="group cursor-pointer overflow-hidden rounded-lg">
+              <div className="relative h-56 overflow-hidden rounded-lg flex items-center justify-center">
                 <img
                   src={corporateTeam}
                   alt="Corporate team photography"
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                  className="w-full h-auto max-h-full object-contain transition-all duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-lg font-bold">Team Photography</h3>
+                    <h3 className="text-lg font-bold"> </h3>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="glass-card group cursor-pointer overflow-hidden">
-              <div className="relative h-44 overflow-hidden rounded-lg">
+            <div className="group cursor-pointer overflow-hidden rounded-lg">
+              <div className="relative h-56 overflow-hidden rounded-lg flex items-center justify-center">
                 <img
                   src={corporateBuilding}
                   alt="Corporate architecture photography"
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                  className="w-full h-auto max-h-full object-contain transition-all duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-lg font-bold">Corporate Spaces</h3>
+                    <h3 className="text-lg font-bold"> </h3>
                   </div>
                 </div>
               </div>
@@ -110,13 +110,13 @@ const CorporateSection = () => {
         {/* Call to Action */}
         <div className="text-center">
           <div className="glass-card max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Ready to Elevate Your Brand?</h3>
+            <h3 className="text-2xl font-bold mb-4">Ready to Turn Moments into Memories?</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Let's create professional imagery that reflects your company's values and showcases 
               your team's expertise. Contact us to discuss your corporate photography needs.
             </p>
             <Button asChild className="bg-gradient-primary hover:shadow-glow transition-all duration-300 hover:scale-105">
-              <a href="#contact">Get Corporate Quote</a>
+              <a href="#contact">Get Quote</a>
             </Button>
           </div>
         </div>

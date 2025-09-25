@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
-import umemuloImage from "@/assets/umemulo-ceremony.jpg";
+import umemuloImage from "@/assets/umemulo.jpg";
 
 const UmemuloSection = () => {
   return (
     <section id="umemulo" className="py-20 px-6 bg-gradient-to-br from-card/50 to-muted/30">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="glass-card min-h-[400px] flex items-center justify-center">
+          <div className="min-h-[400px] flex items-center justify-center overflow-hidden rounded-lg">
             <img
               src={umemuloImage}
               alt="Umemulo photography"

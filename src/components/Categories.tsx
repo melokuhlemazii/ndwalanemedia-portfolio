@@ -1,6 +1,6 @@
 const categories = [
   { name: "Corporate", href: "#corporate" },
-  { name: "Umemulo", href: "#umemulo" },
+  { name: "Umembeso", href: "#umemulo" },
   { name: "Wedding", href: "#wedding" },
   { name: "Studio", href: "#studio" },
 ];

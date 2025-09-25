@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="py-12 px-6 border-t border-border">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center gap-6">
-          <div className="flex gap-4">
+        <div className="flex items-center justify-between gap-6">
+          <div className="flex gap-4 items-center">
             <a href="#" className="social-icon" aria-label="Facebook">
               <Facebook size={18} />
             </a>
@@ -20,7 +20,8 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <div className="text-sm text-muted-foreground">
+
+          <div className="text-sm text-muted-foreground ml-auto">
             © {currentYear} MaziiTech — All rights reserved
           </div>
         </div>

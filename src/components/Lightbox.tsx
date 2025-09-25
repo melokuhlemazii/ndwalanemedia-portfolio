@@ -2,70 +2,88 @@ import { X } from "lucide-react";
 import { useEffect } from "react";
 
 interface LightboxProps {
-  image: {
+  images: Array<{
+    id?: string;
     src: string;
-    title: string;
-    description: string;
-  };
+    title?: string;
+    description?: string;
+  }>;
+  currentIndex: number;
   onClose: () => void;
+  onNavigate: (newIndex: number) => void;
 }
 
-const Lightbox = ({ image, onClose }: LightboxProps) => {
+const Lightbox = ({ images, currentIndex, onClose, onNavigate }: LightboxProps) => {
   useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowLeft') onNavigate(Math.max(0, currentIndex - 1));
+      if (e.key === 'ArrowRight') onNavigate(Math.min(images.length - 1, currentIndex + 1));
     };
 
-    document.addEventListener('keydown', handleEscape);
+    document.addEventListener('keydown', handleKey);
     document.body.style.overflow = 'hidden';
 
     return () => {
-      document.removeEventListener('keydown', handleEscape);
+      document.removeEventListener('keydown', handleKey);
       document.body.style.overflow = '';
     };
-  }, [onClose]);
+  }, [currentIndex, images.length, onClose, onNavigate]);
+
+  const prev = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    onNavigate(Math.max(0, currentIndex - 1));
+  };
+
+  const next = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    onNavigate(Math.min(images.length - 1, currentIndex + 1));
+  };
+
+  const image = images[currentIndex];
 
   return (
-    <div 
+    <div
       className="lightbox"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
-      aria-labelledby="lightbox-title"
     >
       <button
         className="absolute top-6 right-6 p-2 bg-black/40 text-white rounded-lg hover:bg-black/60 transition-colors z-50"
-        onClick={onClose}
+        onClick={(e) => { e.stopPropagation(); onClose(); }}
         aria-label="Close lightbox"
       >
         <X size={20} />
       </button>
-      
-      <div 
+
+      <div
         className="lightbox-content"
         onClick={(e) => e.stopPropagation()}
         role="document"
       >
-        <div className="flex-1 flex items-center justify-center bg-black">
+        <div className="flex-1 flex items-center justify-center bg-black relative">
+          <button
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 text-white p-3 rounded-full z-50 hover:bg-black/60"
+            onClick={prev}
+            aria-label="Previous"
+          >
+            ‹
+          </button>
+
           <img
             src={image.src}
-            alt={image.title}
-            className="max-w-full max-h-[70vh] object-contain"
+            alt={image.title || 'Portfolio image'}
+            className="max-w-full max-h-[85vh] object-contain"
           />
-        </div>
-        
-        <div className="w-full lg:w-96 p-6 space-y-4">
-          <h3 id="lightbox-title" className="text-xl font-semibold text-foreground">
-            {image.title}
-          </h3>
-          <p className="text-muted-foreground leading-relaxed">
-            {image.description}
-          </p>
-          <div className="pt-4 border-t border-border text-sm text-muted-foreground">
-            Camera • Lens • Settings
-          </div>
+
+          <button
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 text-white p-3 rounded-full z-50 hover:bg-black/60"
+            onClick={next}
+            aria-label="Next"
+          >
+            ›
+          </button>
         </div>
       </div>
     </div>

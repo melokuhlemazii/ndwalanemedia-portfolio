@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-photographer.jpg";
+import heroImage from "@/assets/ndwalane.jpg";
 
 const Hero = () => {
   return (
@@ -27,11 +27,11 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="glass-card min-h-[400px] flex items-center justify-center">
+          <div className="flex items-center justify-center relative overflow-hidden rounded-2xl">
             <img
               src={heroImage}
-              alt="Professional photography showcase"
-              className="w-full h-80 object-cover rounded-lg"
+              alt="Ndwalane Media - Professional Photography"
+              className="max-w-[340px] max-h-[480px] w-auto h-auto object-contain"
               loading="lazy"
             />
           </div>

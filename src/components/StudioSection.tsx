@@ -1,4 +1,4 @@
-import studioSetup from "@/assets/studio-setup.jpg";
+import studioSetup from "@/assets/studio.jpg";
 
 const StudioSection = () => {
   return (
@@ -7,10 +7,10 @@ const StudioSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="text-sm font-semibold text-muted-foreground tracking-[3px] uppercase">
-              About Studio
+              Ndwalane Media
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-              Moments in Focus
+              Moments in Studio
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -25,7 +25,7 @@ const StudioSection = () => {
             </div>
           </div>
 
-          <div className="glass-card min-h-[400px] flex items-center justify-center">
+          <div className="min-h-[400px] flex items-center justify-center overflow-hidden rounded-lg">
             <img
               src={studioSetup}
               alt="Studio portrait photography"
