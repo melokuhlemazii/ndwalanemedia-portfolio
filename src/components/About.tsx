@@ -1,3 +1,5 @@
+import candleImage from "@/assets/candle.jpg";
+
 const About = () => {
   const services = [
     "Grad & Matric Dances",
@@ -9,7 +11,7 @@ const About = () => {
   return (
     <section id="about" className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
           <div className="glass-card space-y-6">
             <h3 className="text-2xl font-semibold">About me</h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -28,6 +30,18 @@ const About = () => {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+
+          {/* Candle Image */}
+          <div className="glass-card overflow-hidden">
+            <div className="h-64 lg:h-80 w-full">
+              <img
+                src={candleImage}
+                alt="Photography atmosphere"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

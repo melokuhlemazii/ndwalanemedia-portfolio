@@ -11,8 +11,8 @@ const Hero = () => {
               Catching moments. Creating mood.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a freelance photographer specializing in portraits, editorial and lifestyle work. 
-              I blend natural light with cinematic editing to craft images that feel both honest and elevated.
+              <strong>NHLAKANIPHO NDWALANE</strong> is a freelance photographer specializing in portraits, editorial and lifestyle work. 
+              He blends natural light with cinematic editing to craft images that feel both honest and elevated.
             </p>
             <p className="text-muted-foreground">
               Available for commissions worldwide. Select a gallery below to explore.
@@ -31,7 +31,7 @@ const Hero = () => {
             <img
               src={heroImage}
               alt="Ndwalane Media - Professional Photography"
-              className="max-w-[340px] max-h-[480px] w-auto h-auto object-contain"
+              className="max-w-[280px] sm:max-w-[340px] max-h-[400px] sm:max-h-[480px] w-auto h-auto object-contain"
               loading="lazy"
             />
           </div>

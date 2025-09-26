@@ -10,17 +10,18 @@ const StudioSection = () => {
               Ndwalane Media
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-              Moments in Studio
+              Our Studio Craft
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                With a commitment to excellence and a dedication to capturing the essence of each subject, 
-                our studio approaches every project with enthusiasm and professionalism. From intimate 
-                portraits to stunning landscapes, we ensure that each photograph reflects our passion 
-                for the art of photography.
+                With a commitment to excellence, Ndwalane Media specializes in transforming studio photoshoots into a
+                gallery of timeless memories. We approach every portrait, headshot, and creative session with
+                professionalism and a keen eye for capturing your unique essence. 
+                
               </p>
               <p>
-                Welcome to our world, where every click of the shutter is a journey into the extraordinary.
+                Welcome to our controlled studio environment, where we craft extraordinary images. Here, every click of
+                the shutter is dedicated to turning your special moments into polished, everlasting memories.
               </p>
             </div>
           </div>

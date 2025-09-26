@@ -88,10 +88,10 @@ const CorporateSection = () => {
         {/* Corporate Services */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {[
-            { title: "Executive Portraits", desc: "Professional headshots for leadership teams" },
-            { title: "Team Photography", desc: "Group shots that showcase your collaborative spirit" },
-            { title: "Office Spaces", desc: "Architectural and interior corporate photography" },
-            { title: "Corporate Events", desc: "Conference and meeting documentation" }
+            { title: "High End Photoshoots", desc: "Crafting powerful portraits that convey authority and approachability for your executive team." },
+            { title: "Studio & Outdoor Sessions", desc: "Dynamic photography that captures the energy and connection in any setting" },
+            { title: "Grad & Matric Dance", desc: "Elegant and timeless photography to celebrate academic milestones and formal celebrations." },
+            { title: "Other", desc: "Comprehensive coverage of your events to document key moments and insights for future use" }
           ].map((service, index) => (
             <div key={index} className="glass-card text-center group hover:shadow-glow transition-all duration-300">
               <div className="w-12 h-12 bg-gradient-primary rounded-full mx-auto mb-4 flex items-center justify-center text-primary-foreground font-bold text-xl group-hover:scale-110 transition-transform duration-300">
@@ -112,8 +112,7 @@ const CorporateSection = () => {
           <div className="glass-card max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Ready to Turn Moments into Memories?</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Let's create professional imagery that reflects your company's values and showcases 
-              your team's expertise. Contact us to discuss your corporate photography needs.
+             Contact us to discuss your photography needs.
             </p>
             <Button asChild className="bg-gradient-primary hover:shadow-glow transition-all duration-300 hover:scale-105">
               <a href="#contact">Get Quote</a>

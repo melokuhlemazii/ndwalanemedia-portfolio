@@ -218,6 +218,15 @@
     gap: 0.75rem;
     @apply p-2;
   }
+  
+  .gallery-item img {
+    max-height: 400px; /* Prevent very tall images on mobile */
+  }
+  
+  /* Better mobile lightbox */
+  .lightbox-content {
+    @apply max-w-full max-h-[95vh] m-2;
+  }
 }
 
 @layer base {

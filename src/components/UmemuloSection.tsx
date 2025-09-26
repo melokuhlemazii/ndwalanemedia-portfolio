@@ -20,18 +20,18 @@ const UmemuloSection = () => {
               Ndwalane Media
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-              Creating<br />Memories
+              Your Umembeso<br />Our Memory
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                As a passionate photographer, our team has an innate ability to freeze moments in time, 
-                turning them into everlasting memories. With a keen eye for detail and a creative flair, 
-                we specialize in portraiture, weddings and corporate photography.
+                As Ndwalane Media, we are passionate about immortalizing profound cultural celebrations like the, 
+                Umembeso wedding ceremony. With a deep respect for tradition and a creative eye, we specialize in 
+                capturing the vibrant emotions and significant moments that tell your unique story.
               </p>
               <p>
-                Driven by a desire to tell stories through imagery, we believe that every photograph 
-                has a unique tale to tell. Whether it's a candid moment between loved ones or the 
-                breathtaking beauty of nature, we strive to evoke emotion and inspire through our work.
+                We believe these cherished rituals are powerful narratives. From the heartfelt exchanges of gifts to the 
+                joyous traditional dances, our goal is to transform these wonderful, fleeting moments into a timeless 
+                tapestry of memories for generations to cherish.
               </p>
             </div>
             <Button asChild className="btn-hero btn-primary">
